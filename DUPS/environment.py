@@ -439,7 +439,7 @@ class Environment:
         reward = 0
         # if latency > 0:
         # reward = (- energy_consumption - latency) - self.check_capacity_violation_penalty()
-        reward = +(0.5 * self.compute_advantage()) - (0.5 * latency) - (0.2 * self.check_capacity_violation_penalty())
+        reward = +(0.6 * self.compute_advantage()) - (0.4 * latency) - (0.2 * self.check_capacity_violation_penalty())
         # reward += self.compute_advantage()
         #     return reward
         # else:
